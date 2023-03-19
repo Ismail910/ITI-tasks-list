@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    height: 100vh;
+}
+
+
+
+/* start foot */
+.foot {
+    background-color: rgb(151, 133, 133);
+    margin-top: 20px;
+    /* height: 57vh; */
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+a{
+    color: #272727;
+}
+.foot .lisi-foot ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#979696;
+    padding: 30px 0;
+}
+.foot .lisi-foot ul li {
+    list-style: none;
+}
+.foot .lisi-foot ul li:hover a {
+    color: rgb(167, 50, 50);
+}
+hr {
+    border: 1px solid #272727;
+}
+.foot .list-foot-one {
+     /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; */
+    /* justify-items: flex-start;  */
+    color: rgb(222, 225, 228);
+}
+.foot .list-foot-one .one-ul ,
+.foot .list-foot-one .two-ul ,
+.foot .list-foot-one .three-ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.foot .list-foot-one .one-ul ul li,
+.foot .list-foot-one .two-ul ul li,
+.foot .list-foot-one .three-ul ul li {
+    padding-top: 10px;
+}
+.foot .list-foot-one .one-ul ul li:first-child ,
+.foot .list-foot-one .one-ul ul li:last-child ,
+.foot .list-foot-one .two-ul ul li:first-child ,
+.foot .list-foot-one .two-ul ul li:last-child ,
+.foot .list-foot-one .three-ul ul li:first-child ,
+.foot .list-foot-one .three-ul ul li:last-child {
+    color: #747272;
+    font-weight: bold;
+    font-style: italic;
+}
+.foot .list-foot-one .i-list-foot {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top:10px ;
+}
+.foot .list-foot-one .i-list-foot p {
+    color: #747272;
+    font-weight: bold;
+}
+.foot .list-foot-one .i-list-foot i {
+    font-size: 25px;
+    padding: 8px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.foot .list-foot-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot .list-foot-two .par p {
+    padding-top: 10px;
+    font-weight: 100;
+    color: #b6b5b5;
+    font-size: 14px;
+}
+.foot .list-foot-two .bou {
+    position: relative;
+}
+.foot .list-foot-two .bou .p  {
+    padding-top: 20px;
+    font-weight: 100;
+    color: #9e9c9c;
+    font-size: 12px;
+ }  
+.foot .list-foot-two .bou .button button{
+    background-color: var(--mine-color);
+    width: 200px;
+    height: 38px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    right:-130px;
+    bottom: -40px;
+}
+
+.foot .list-foot-two .bou .button button:hover a{
+    opacity: 0;
+}
+.foot .list-foot-two .bou .button i {
+    color: white;
+    background-color: inherit;
+    z-index: 3;
+    position: absolute;
+    bottom: -27px;
+    left: 55px;
+}
+/* end foot */
