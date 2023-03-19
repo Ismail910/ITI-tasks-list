@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1667902097 source:e:\opensource\c\day3\lab4q4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1667922281 source:e:\c programing\day3\lab4q4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1667982183 source:e:\iti intake 43\c   program\day 4\lab\num4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+

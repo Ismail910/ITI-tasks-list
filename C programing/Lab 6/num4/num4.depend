@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1668285715 source:e:\iti intake 43\c   program\day 6\lab\num4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
