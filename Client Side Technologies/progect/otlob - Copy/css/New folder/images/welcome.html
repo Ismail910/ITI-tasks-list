@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>welcome.html</title>
+    <style>
+        table {
+            border:1px solid #222;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table tr,
+        tr td {
+            border: 1px solid #222;
+        }
+    </style>
+</head>
+<body >
+   <caption>contact me from</caption>
+   <table>
+       <form action="contact.thml.html" method="post" >
+       <thead>
+           <tr >
+               <th colspan="2">contact me</th>
+           </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>Your Name:</td>
+            <td><input type="text"></td>
+        </tr>
+
+        </tr>
+            <td>Your opinion on the website: </td>
+            <td>
+                <input type="radio" name="ism">good
+                <input type="radio" name="ism">very good
+                <input type="radio" name="ism">fair
+            </td>
+        </tr>
+      
+        </tr>
+            <td> Gender: </td>
+            <td > 
+                <input type="radio" name="ahm">
+                male
+            </td>
+            <td width="300px"> 
+                <input type="radio" name="ahm">female
+            </td>
+        </tr>
+  
+        <tr>
+            <td>Marital status:	</td>
+            <td>
+                <select>
+                    <option value="singie" >single</option>
+                    <option value="married">married</option>
+                    <option value="other" selected>other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>You know about my website from:</td>
+            <td>
+                <input list="prog">
+                <datalist id="prog">
+                    <option value="intemet" >intemet</option>
+                    <option value="frind">frind</option>
+                    <option value="engine" >engine</option>
+                    <option value="other" >other</option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>mail:</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>sudject:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>massage:</td>
+            <td><textarea  cols="50" rows="2"></textarea></td>
+        </tr>
+        
+       </tbody>
+       <tfoot>
+        <tr> 
+            <th>
+                <th>
+                    <input type="submit">
+                </th>
+                
+            </th>
+        </tr>
+       </tfoot>
+    </form>
+   </table>
+</body>
+</html>

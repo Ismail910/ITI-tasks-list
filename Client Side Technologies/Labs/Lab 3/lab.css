@@ -1,0 +1,173 @@
+
+* {
+    font-family: 'Cairo', sans-serif;
+}
+/* num one */
+/* .par {
+    width: 300px;
+    height: 300px;
+    background-color: antiquewhite;
+    position: relative;
+    top: 200px;
+    left: 40%;
+}
+.week {
+    position: absolute;
+    top: 10px;
+    left:33% ;
+    font-size: 30px;
+}
+.month {
+    position: absolute;
+    top: 60px;
+    left:33% ;
+    font-size: 30px;
+    
+}
+button {
+   
+    padding: 5px;
+    margin-top: 60%;
+    margin-left: 39px;
+    border-radius: 10px;
+    background-color: rgb(235, 81, 9);
+    color: white;
+} */
+
+
+/* num about */
+
+/* body {
+    background-color: #666;
+    color: white;
+}
+a {
+    color: red;
+}
+.tit {
+    padding: 20px; 
+    font-weight: bold;
+}
+h1 {
+    margin: 10px ;
+    font-size: 40px;
+    color: rgb(72, 129, 236);
+}
+.tit p {
+    margin: 40px 10px;
+    font-size: 20px;
+}
+.tit p span {
+    color: rgb(255, 187, 0);
+}
+.mood p {
+    display: inline-block;
+} 
+
+/* num table */
+
+
+/* num CV */
+.counter {
+    margin: 10px;
+    padding: 50px;
+    background-color: #EEE;
+    
+}
+a {
+    color: red;
+}
+.counter .head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.counter .head .about {
+    flex-grow: 7;
+}
+.counter .head .pdf {
+    flex-grow: 3;
+}
+.counter .head .pdf div {
+    width: 170px;
+    background-color: #555;
+    padding: 15px;
+    color: white;
+    margin-bottom: 5px;
+}
+.counter .head .pdf div:hover {
+    background-color: blue;
+    color: red;
+}
+
+
+.counter .profil {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
+.counter .profil div  {
+    flex-grow: 1;
+    
+}
+.counter .profil p {
+    flex-grow: 10;
+    width: 300px;
+   
+}
+
+
+.counter .skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
+.counter .skills div  {
+    flex-grow: 1;
+}
+.counter .skills p {
+    flex-grow: 10;
+    width: 300px;
+}
+
+.counter .technical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
+.counter .technical div  {
+    flex-grow: 1;
+    
+}
+.counter .technical p {
+    flex-grow: 10;
+    width: 300px;
+}
+
+
+.counter .experi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+}
+.counter .experi div  {
+    flex-grow: 1;
+    
+}
+.counter .experi p {
+    flex-grow: 10;
+    width: 1100px;
+}
