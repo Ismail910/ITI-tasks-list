@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1668958334 source:e:\iti intake 43\ds\day 2\labday 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Stack.h"
+
+1668969693 e:\iti intake 43\ds\day 2\labday 2\include\stack.h
+
+1668958334 source:e:\iti intake 43\ds\day 2\lab\labday 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Stack.h"
+
+1668969693 e:\iti intake 43\ds\day 2\lab\labday 2\include\stack.h
+

@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1668969636 source:e:\iti intake 43\ds\day 2\lab2queue\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Queue.h"
+
+1668969636 e:\iti intake 43\ds\day 2\lab2queue\include\queue.h
+
+1670533958 source:e:\iti intake 43\ds\day 2\lab\lab2queue\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Queue.h"
+
+1668969636 e:\iti intake 43\ds\day 2\lab\lab2queue\include\queue.h
+
+1670533958 source:e:\iti intake 43\ds\labs\lab 2\lab2queue\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Queue.h"
+
+1668969636 e:\iti intake 43\ds\labs\lab 2\lab2queue\include\queue.h
+

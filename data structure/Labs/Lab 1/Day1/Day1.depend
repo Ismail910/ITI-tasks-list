@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1668591874 source:f:\education\iti\training\ds\day1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1668592493 f:\education\iti\training\ds\day1\include\linkedlist.h
+
+1668592524 source:e:\iti intake 43\ds\new folder\day1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1668592493 e:\iti intake 43\ds\new folder\day1\include\linkedlist.h
+
+1668933395 source:e:\iti intake 43\ds\day1\new folder\day1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1668592493 e:\iti intake 43\ds\day1\new folder\day1\include\linkedlist.h
+
+1668933395 source:e:\iti intake 43\ds\day 1\lab 1\day1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1668592493 e:\iti intake 43\ds\day 1\lab 1\day1\include\linkedlist.h
+
+1671150342 source:e:\iti intake 43\ds\labs\lab 1\day1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1671144585 e:\iti intake 43\ds\labs\lab 1\day1\include\linkedlist.h
+

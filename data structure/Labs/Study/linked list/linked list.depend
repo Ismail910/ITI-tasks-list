@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1671193294 source:e:\iti intake 43\ds\study\linked list\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1671191290 e:\iti intake 43\ds\study\linked list\include\linked list.h
+
+1671193939 e:\iti intake 43\ds\study\linked list\include\linkedlist.h
+
+1671730044 source:e:\iti intake 43\ds\labs\study\linked list\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+
+1671730265 e:\iti intake 43\ds\labs\study\linked list\include\linkedlist.h
+
