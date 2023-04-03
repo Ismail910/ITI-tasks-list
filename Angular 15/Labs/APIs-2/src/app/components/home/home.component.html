@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="mx-auto w-75 mb-4">
+      <label for="search">filter posts</label>
+      <input type="text" #element name="search" (keyup.enter)="filterPosts(element)" class="form-control">
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt-4">
+  <div class="row">
+    <ng-container *ngFor="let post of filteredArray">
+      <app-post-card class="col-12 col-md-3 mb-2" [id]="post.id"></app-post-card>
+    </ng-container>
+  </div>
+</div>

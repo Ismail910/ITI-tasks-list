@@ -1,0 +1,48 @@
+<!-- <div class="card" style="height:100%;">
+  <img [src]="post.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{post.title | titlecase}}</h5>
+    <p class="card-text">{{post.content}}</p>
+    <p class="card-text text-danger">{{post.createdAt}}</p>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h4 class="card-title position-relative">{{post.creator.name}}
+          <span [style.background-color]="post.creator.isOnline ? 'green' : 'red'"
+            class="position-absolute top-20 start-100 translate-middle p-2 border border-light rounded-circle"></span>
+        </h4>
+      </div>
+      <div class="col-12 col-md-6">
+        <p class="card-title">followers : {{post.creator.followers}}</p>
+        <p class="card-title">likes : {{post.likes}}</p>
+      </div>
+    </div>
+    <button class="btn" [class]="post.creator.isFollowing? 'btn-success' : 'btn-danger'" (click)="followMe(post)">
+      {{post.creator.isFollowing? 'Unfollow':'Follow'}}
+    </button> -->
+<!-- <a (click)="isFollowing(post.creator.isFollowing)"
+     *ngIf="post.creator.isFollowing; else follow" href="#"
+      class="btn btn-danger">UnFollow</a> -->
+<!-- <ng-template #follow>
+      <a (click)="isFollowing(post.creator.isFollowing)" href="#" class="btn btn-success">Follow</a>
+    </ng-template>
+  </div>
+</div> -->
+<div class="container mt-5">
+  <div class="card " style="height:100%;">
+    <div class="card-body ">
+      <h5 class="card-title">{{post?.title | titlecase}}</h5>
+      <p class="card-text">{{post?.body}}</p>
+      <button (click)="showComments(post.id)" class="btn btn-success">{{buttonName}}</button>
+    </div>
+    <ng-container *ngIf="show">
+      <ng-container *ngFor="let comment of comments">
+        <span class="m-2"><b>commenter Name :</b> {{comment?.name}}</span>
+        <p class="m-2"><b>comment body : </b>{{comment?.body}}</p>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>
+
+<!-- <button class="btn" [class]="post.creator.isFollowing? 'btn-success' : 'btn-danger'" (click)="followMe(post)">
+  {{post.creator.isFollowing? 'Unfollow':'Follow'}}
+</button> -->
