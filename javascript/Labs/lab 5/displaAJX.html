@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    <!-- <h1 id="userid"></h1>
+    <h1 id="first"></h1>
+    <h1 id="last"></h1>
+    <img id="img" src="" alt=""> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <select id="mySelect" onchange="myFunction()">
+        <option id="option"  value="1">1</option>
+        <option id="option" value="2">2</option>
+        <option id="option" value="3">3</option>
+        <option id="option" value="4">4</option>
+        <option id="option" value="5">5</option>
+        <option id="option" value="6">6</option>
+    </select>
+
+    <button onclick="getData()"> getData </button> -->
+
+
+
+    <label for="">enter your id</label><input type="text" name="userid" id="userid">
+    <button onclick="getData()">data Student</button>
+    <button onclick="getallData()">data all student</button>
+    <form>
+        <select id="mySelect" onchange="myFunction(this)" >
+            
+        </select>
+      </form>
+    
+    
+
+   
+    <script>
+        function getData(){
+    var xhttp= new XMLHttpRequest();
+    xhttp.onreadystatechange=function(){
+        if(this.status==200 && this.readyState==4)
+        {
+            var dataAfterConvert=JSON.parse(this.responseText);
+            console.log(dataAfterConvert);
+            if(document.getElementById("userid").value==dataAfterConvert["data"]["id"])
+                {
+                    const para = document.createElement("p");
+                    para.innerText = dataAfterConvert["data"]["first_name"]+"   "+dataAfterConvert["data"]["last_name"];
+                    document.body.appendChild(para);
+                    const paraimg = document.createElement("img");
+                    paraimg.src= dataAfterConvert["data"]["avatar"];
+                    document.body.appendChild(paraimg);
+                }
+                else
+                {
+                    alert("not found");
+                }
+
+        }
+    }
+
+    xhttp.open("GET","https://reqres.in/api/users/1",true);
+    xhttp.send();
+
+}
+
+
+function getallData()
+{
+    var xhttp= new XMLHttpRequest();
+    xhttp.onreadystatechange=function(){
+        if(this.status==200 && this.readyState==4)
+        {
+            var dataAfterConvert=JSON.parse(this.responseText);
+            console.log(dataAfterConvert);
+            for(var i=0;i< dataAfterConvert["data"].length;i++)
+                {
+                    const para = document.createElement("p");
+                    para.innerText = dataAfterConvert["data"][i]["first_name"]+"   "+dataAfterConvert["data"][i]["last_name"];
+                    document.body.appendChild(para);
+                    const paraimg = document.createElement("img");
+                    paraimg.src= dataAfterConvert["data"][i]["avatar"];
+                    document.body.appendChild(paraimg);
+
+                    var x = document.getElementById("mySelect");
+                    var option = document.createElement("option");
+                    option.text = para.innerText;
+                    option.value = dataAfterConvert["data"][i]["id"];
+                    x.add(option);
+                }
+                
+
+        }
+    }
+    xhttp.open("GET","https://reqres.in/api/users",true);
+    xhttp.send();
+
+}
+
+
+function myFunction(select) {
+   // alert("sad");
+    var value = document.getElementById("mySelect").value;
+    //console.log(select);
+    var xhttp= new XMLHttpRequest();
+    xhttp.onreadystatechange=function(){
+        if(this.status==200 && this.readyState==4)
+        {
+            var dataAfterConvert=JSON.parse(this.responseText);
+    for(var i=0;i< dataAfterConvert["data"].length;i++)
+    {
+          if(dataAfterConvert["data"][i]["id"]==value)
+          {
+            const para = document.createElement("p");
+        para.innerText = dataAfterConvert["data"][i]["first_name"]+"   "+dataAfterConvert["data"][i]["last_name"];
+        document.body.appendChild(para);
+        const paraimg = document.createElement("img");
+        paraimg.src= dataAfterConvert["data"][i]["avatar"];
+        document.body.appendChild(paraimg);
+         }          
+        
+   }
+   
+}
+    
+    }
+    xhttp.open("GET","https://reqres.in/api/users",true);
+xhttp.send(); 
+  }
+    </script>
+</body>
+</html>

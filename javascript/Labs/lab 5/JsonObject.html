@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <script>
+        var Student = {
+
+           "0" : {
+                           "ID" : 1,
+                           "name": "Ahmed",
+                            "Age" : 27 ,
+                            "address" : "Assiut",
+                            "Skills" : ["read", "play", "swamming"],
+                            "IsLedear" : true ,
+                        },
+            "1" : {
+                            "ID" : 2,
+                            "name" : "Ali",
+                            "Age" : 20 ,
+                            "address" : "Assiut",
+                            "Skills" : ["PHP", "HTML", "js"],
+                            "IsLedear" : false ,
+                        },
+            "2" : {
+                            "ID" : 3,
+                            "name" : "ame",
+                            "Age" : 30 ,
+                            "address" : "Assiut",
+                            "Skills" : ["CSS", "C", "C++"],
+                            "IsLedear" : false ,
+                        }
+        } 
+            function display()
+            {
+                for(var i = 0; i < 3 ; i++)
+                {
+                    console.log(Student[i]["name"]);
+                    for(var j = 0; j < 3 ; j++ )
+                    {
+                         console.log( `Skills ${j+1} =   ${Student[i].Skills[j]}`);
+                    }
+                }
+            }
+            display();
+    </script>
+    
+</body>
+</html>

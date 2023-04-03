@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    #Calculator {
+        background-color: #eee;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        font-size: 20px;
+    }
+    button {
+        width: 40px;
+        height: 30px;
+    }
+</style>
+<body>
+    <div id="Calculator">
+        Javascript Calculator
+        <input type="text"  id="Calc"><br>
+
+        <button class="numper" onclick="ennumper(this)"> 1 </button>
+        <button class="numper" onclick="ennumper(this)"> 2 </button>
+        <button class="numper" onclick="ennumper(this)"> 3 </button>
+        <button class="numper" onclick="ennumper(this)"> / </button>
+        <br>
+        <button class="numper" onclick="ennumper(this)"> 4 </button>
+        <button class="numper" onclick="ennumper(this)"> 5 </button>
+        <button class="numper" onclick="ennumper(this)"> 6 </button>
+        <button class="numper" onclick="ennumper(this)"> * </button>
+        <br>
+        <button class="numper" onclick="ennumper(this)"> 7 </button>
+        <button class="numper" onclick="ennumper(this)"> 8 </button>
+        <button class="numper" onclick="ennumper(this)"> 9 </button>
+        <button class="numper" onclick="ennumper(this)"> + </button><br>
+        <button class="numper" onclick="ennumper(this)"> - </button>
+        <button class="numper" onclick="remov()"> C </button>
+        <button class="numper" onclick="equal()"> = </button>
+    </div>
+
+
+    <div id="res"></div>
+
+    <script>
+        var Calc = document.getElementById("Calc");
+        var res = document.getElementById("res");
+
+        function ennumper(numper)
+        {
+           Calc.value += numper.innerText
+        }
+        function equal() {
+
+            res.innerText = eval(Calc.value)
+        }
+        function remov()
+        {
+            Calc.value = ""
+        }
+    </script>
+    
+</body>
+</html>

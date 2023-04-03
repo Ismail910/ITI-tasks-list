@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <p  id="question">question 1</p>
+   
+   
+   
+  
+
+    <button onclick="nextquestion()">next</button>
+    <button onclick="previousquestion()">previous</button>
+
+    <script>
+      // document.getElementsByTagName("question")
+      var counter = 0;
+     
+      var ourquestion = [];
+      ourquestion[0] = '<p class="question1" id="question">question 1</p>';
+      ourquestion[1] = '<p class="question2"  id="question">question 2</p>';
+      ourquestion[2] = '<p class="question3"  id="question" >question 3</p>';
+      ourquestion[3] = '<p class="question4"  id="question">question 4</p>';
+      ourquestion[4] = ' <p class="question5"  id="question">question 5</p>';
+
+
+
+      
+      function nextquestion() {
+        if (counter < 4) {
+          document.getElementById("question").innerHTML = ourquestion[counter++];
+        } else {
+          counter = 0;
+        }
+      }
+
+      function previousquestion() {
+        if (counter >= 0) {
+          document.getElementById("question").innerHTML = ourquestion[counter--];
+        } else {
+          counter = ourquestion.length - 1;
+        }
+      }
+
+      
+
+      
+    </script>
+  </body>
+</html>

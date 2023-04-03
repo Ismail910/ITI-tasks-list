@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallary opacity</title>
+    <style></style>
+  </head>
+  <body>
+    
+    <img
+      src="1.jpg"
+      id="img1"
+      width="200"
+      height="200"
+      onmouseover="opacitydecrease(this)"
+      onmouseleave="opacityfull()"
+    />
+    <img
+      src="2.jpg"
+      id="img2"
+      width="200"
+      height="200"
+      onmouseover="opacitydecrease(this)"
+      onmouseup="opacityfull()"
+    />
+   
+
+    <script>
+     
+     
+
+      var counter = 0.3;
+
+      function opacitydecrease(image) {
+        
+        var myInterval = setInterval(function () {
+          if(image.getAttribute("src")=="1.jpg")
+          {
+            image.style.opacity = counter = counter + 0.1;
+            
+          }
+          if(image.getAttribute("src")=="2.jpg")
+          {
+            image.style.opacity = counter =  counter + 0.1;
+          }
+          
+        }, 1000);
+      }
+      function opacityfull() {
+        clearInterval(myInterval);
+      }
+
+
+
+      
+    
+    </script>
+  </body>
+</html>

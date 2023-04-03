@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span class="span">this span</span>
+    <span  class="span">this span</span>
+    <span  class="span">this span</span>
+    <span  class="span">this span</span>
+    <span  class="span">this span</span>
+    <span  class="span">this span</span>
+    <span  class="span">this span</span>
+    <button onclick="changebackgroundRandom()">Change Random Color</button>
+
+
+    <script>
+function changebackgroundRandom()
+{
+    var colorArray=['red','green','blue','orange','yellow','brown','gray','lightgray','gold']
+
+    var spans= document.getElementsByClassName("span");
+    
+    for(var i=0 ; i<spans.length;i++)
+    {
+        var randomNumber=Math.floor(Math.random() *10)  
+        spans[i].style.background = colorArray[randomNumber];
+    }
+}
+
+    
+    
+    </script>
+    
+</body>
+</html>

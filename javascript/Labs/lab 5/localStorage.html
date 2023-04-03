@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+</head>
+<body>
+
+    
+        <label for="user">User Name</label>
+        <input type="text" name="username" id="user">
+        <label for="pass">password</label>
+        <input type="password" id="pass" name="password">
+        <input type="submit" onclick="setandRemovdata()" id="sub" name="submit">
+        <button onclick="getdata()">get Data</button>
+        <input type="checkbox" id="checkbox">
+  
+
+
+    <script>
+        var user = document.getElementById("user");
+        var pass = document.getElementById("pass");
+        var submit = document.getElementById("sub");
+        var chec = document.getElementById("checkbox");
+
+
+        function setandRemovdata()
+        { if(chec.checked )
+            {
+                localStorage.setItem("User Name",  user.value);
+                localStorage.setItem("password", pass.value);
+            }else                
+            {
+            localStorage.removeItem("User Name");
+            localStorage.removeItem("password");
+            }
+            
+        }
+        function getdata()
+        {
+           var userSto = localStorage.getItem("User Name" );
+           var passSto = localStorage.getItem("password" );
+            user.value = userSto;
+            pass.value = passSto;
+        }
+        // function removdata()
+        // {
+        //     if(chec == 0)
+        //     {
+        //     localStorage.removeItem("User Name");
+        //     localStorage.removeItem("password");
+        //     }
+            
+        // }
+
+
+    </script>
+    
+</body>
+</html>
