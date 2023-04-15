@@ -1,0 +1,5 @@
+Create RESTful API with the following
+  + list posts
+  + list comments on specific post
+  + create post and handle any kind of validation usign middleware
+  + list posts that created by a specific user
