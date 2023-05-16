@@ -1,0 +1,44 @@
+
+img{
+  height: 20rem;
+}
+
+.more{
+  background-color:rgb(156, 8, 28);
+}
+.less{
+  background-color:rgb(228, 224, 12);
+}
+
+.more,.less{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bt{
+  background-color:rgb(231, 61, 9);
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.unimation{
+  transition: .4s;
+}
+.unimation:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+  0 3px 6px rgba(0,0,0,0.23);
+  transform: translate(0px, -15px);
+}
+
