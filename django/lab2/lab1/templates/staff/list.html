@@ -1,0 +1,32 @@
+{%extends 'index.html'%}
+{%block title%}
+supervisiors
+{%endblock%}
+
+{%block content%}
+<table border="1" width="100%">
+   <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>actions</th>
+   </tr>
+    {%for staff in staffs%}
+        <tr>
+            <td>
+                {{staff.id}}
+            </td>
+            <td>
+                {{staff.name}}
+            </td>
+            <td>
+                <a href="{%url 'staffedit' staff.id %}">update</a>
+                <a href="{%url 'staffdel' staff.id %}">delete</a>
+            </td>
+
+        </tr>
+
+    {%endfor%}
+</table>
+
+{%endblock%}
+

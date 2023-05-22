@@ -1,0 +1,13 @@
+{%extends 'index.html'%}
+{%block title%}
+add supervisior
+{%endblock%}
+
+{%block content%}
+<form method="post">
+    {%csrf_token%}
+    <input type="text" required="true" name="staffname"/>
+    <input type="submit" value="Add">
+</form>
+{%endblock%}
+

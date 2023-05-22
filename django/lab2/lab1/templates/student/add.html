@@ -1,0 +1,19 @@
+{%extends 'index.html'%}
+{%block title%}
+add Student
+{%endblock%}
+
+{%block content%}
+<form method="post">
+    {%csrf_token%}
+    <input type="text" required="true" name="studentname"/>
+    <input type="hidden" name="id" value="{{student.id}}">
+    <select name="staffid">
+        {%for staff in staffs%}
+        <option value="{{staff.id}}">{{staff.name}}</option>
+        {%endfor%}
+    </select>
+    <input type="submit" value="Add">
+</form>
+{%endblock%}
+
